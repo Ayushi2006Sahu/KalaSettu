@@ -1,0 +1,60 @@
+.imageslider{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+}
+.images{
+    height: 500px;
+    width:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.middleimage{
+    height: 350px;
+    width:250px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px 1px;
+}
+.rightimage{
+    height: 230px;
+    width:150px;
+    object-fit: cover;
+ border-radius: 10px;
+ z-index: -9;
+}
+.leftimage{
+    height: 230px;
+    width:150px;
+    object-fit: cover;
+ border-radius: 10px;
+ z-index: -9;
+}
+.buttons{
+    display: flex;
+    gap: 15px;
+}
+.rightbutton{
+   
+    padding: 10px;
+    border:1px solid black;
+    border-radius: 100%;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.leftbutton{
+    padding: 10px;
+    border:1px solid black;
+    border-radius: 100%;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
