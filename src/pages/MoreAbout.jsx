@@ -122,7 +122,7 @@ const MoreAbout = () => {
     {/* Expert 1 */}
     <div className="bg-white text-black rounded-3xl shadow-lg p-6 flex flex-col items-center">
       <img
-        src="./src/assets/ceo.jpeg" // Replace with actual image path
+        src="https://firebasestorage.googleapis.com/v0/b/image-a6bb1.appspot.com/o/ceo.jpeg?alt=media&token=106608ac-da58-4c50-bae8-2ebdadd0b438" // Replace with actual image path
         alt="Expert 1"
         className="w-32 h-32 rounded-full mb-4 object-cover"
       />
@@ -133,7 +133,7 @@ const MoreAbout = () => {
     {/* Expert 2 */}
     <div className="bg-white text-black rounded-3xl shadow-lg p-6 flex flex-col items-center">
       <img
-        src="./src/assets/hr.jpeg" // Replace with actual image path
+        src="https://firebasestorage.googleapis.com/v0/b/image-a6bb1.appspot.com/o/hr.jpeg?alt=media&token=c053b27d-70a4-4a00-aa72-1b1b2c9f7626" // Replace with actual image path
         alt="Expert 2"
         className="w-32 h-32 rounded-full mb-4 object-cover"
       />
@@ -144,7 +144,7 @@ const MoreAbout = () => {
     {/* Expert 3 */}
     <div className="bg-white text-black rounded-3xl shadow-lg p-6 flex flex-col items-center">
       <img
-        src="./src/assets/co-founder.jpg" // Replace with actual image path
+        src="https://firebasestorage.googleapis.com/v0/b/image-a6bb1.appspot.com/o/co-founder.jpg?alt=media&token=163a017d-841c-4175-9489-ce3813ecdb9c" // Replace with actual image path
         alt="Expert 3"
         className="w-32 h-32 rounded-full mb-4 object-cover"
       />
@@ -155,7 +155,7 @@ const MoreAbout = () => {
     {/* Expert 4 */}
     <div className="bg-white text-black rounded-3xl shadow-lg p-6 flex flex-col items-center">
       <img
-        src="./src/assets/cmo.jpeg" // Replace with actual image path
+        src="https://firebasestorage.googleapis.com/v0/b/image-a6bb1.appspot.com/o/cmo.jpeg?alt=media&token=62c1bd8b-cd57-4ecb-8a15-21869a294734" // Replace with actual image path
         alt="Expert 4"
         className="w-32 h-32 rounded-full mb-4 object-cover"
       />
@@ -166,7 +166,7 @@ const MoreAbout = () => {
     {/* Expert 5 */}
     <div className="bg-white text-black rounded-3xl shadow-lg p-6 flex flex-col items-center">
       <img
-        src="./src/assets/sales.jpeg" // Replace with actual image path
+        src="https://firebasestorage.googleapis.com/v0/b/image-a6bb1.appspot.com/o/sales.jpeg?alt=media&token=ea33de7d-3f8d-479f-bac3-263f812c42e2" // Replace with actual image path
         alt="Expert 5"
         className="w-32 h-32 rounded-full mb-4 object-cover"
       />
@@ -177,7 +177,7 @@ const MoreAbout = () => {
     {/* Expert 6 */}
     <div className="bg-white text-black rounded-3xl shadow-lg p-6 flex flex-col items-center">
       <img
-        src="./src/assets/cfo.jpeg" // Replace with actual image path
+        src="https://firebasestorage.googleapis.com/v0/b/image-a6bb1.appspot.com/o/cfo.jpeg?alt=media&token=e6d774fa-6c04-4b44-92ea-979850a8372f" // Replace with actual image path
         alt="Expert 6"
         className="w-32 h-32 rounded-full mb-4 object-cover"
       />
@@ -188,7 +188,7 @@ const MoreAbout = () => {
 {/* Expert 7 */}
     <div className="bg-white text-black rounded-3xl shadow-lg p-6 flex flex-col items-center">
       <img
-        src="./src/assets/coo.jpeg" // Replace with actual image path
+        src="https://firebasestorage.googleapis.com/v0/b/image-a6bb1.appspot.com/o/coo.jpeg?alt=media&token=b4447ae6-eced-4387-8a64-e746e905b1b8" // Replace with actual image path
         alt="Expert 6"
         className="w-32 h-32 rounded-full mb-4 object-cover"
       />
