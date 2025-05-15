@@ -19,25 +19,50 @@ const artists = [
   { name: 'Ritesh Agarwal', image: 'https://www.bookmyartistindia.com/wp-content/uploads/2024/10/Ritesh-Agarwal-552x644.jpg' },
 ];
 
-const handleBookingEmail = (artistName) => {
-  const email = "ayush3995@gmail.com"; // change to your actual booking email
-  const subject = `Booking Request for ${artistName}`;
-  const body = `Hello,\n\nI would like to book ${artistName} for an event. Please provide more details.\n\nRegards,\n[Your Name]`;
+const razorpayKey = import.meta.env.VITE_RAZORPAY_KEY_ID;
 
-  // Open default email app with pre-filled fields
-  window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
-  // Show popup
-  toast.info("You can book through email only.", {
-    position: "bottom-center",
-    autoClose: 4000,
-    hideProgressBar: false,
-    closeOnClick: true,
-    pauseOnHover: true,
-    draggable: true,
-    theme: "dark",
+const handleBooking = (artistName) => {
+  const options = {
+    key: razorpayKey,
+    amount: 50000, // amount in paise => 500 = ₹500
+    currency: "INR",
+    name: "Celebrity Booking",
+    description: `Booking for ${artistName}`,
+    image: "https://your-logo-url.com/logo.png", // optional
+    handler: function (response) {
+      toast.success("Payment Successful!", {
+        position: "bottom-center",
+        autoClose: 3000,
+        theme: "dark",
+      });
+
+      // Optionally send `response.razorpay_payment_id` to your server
+    },
+    prefill: {
+      name: "Ayushi",
+      email: "ayush3995@gmail.com",
+    },
+    notes: {
+      bookingFor: artistName,
+    },
+    theme: {
+      color: "#3399cc",
+    },
+  };
+
+  const rzp = new window.Razorpay(options);
+  rzp.open();
+
+  rzp.on("payment.failed", function (response) {
+    toast.error("Payment Failed!", {
+      position: "bottom-center",
+      autoClose: 3000,
+      theme: "dark",
+    });
   });
 };
+
 
 
 
@@ -52,7 +77,7 @@ const Concerts = () => {
             <div className="p-4 text-center">
               <h2 className="text-lg font-semibold">{artist.name}</h2>
               <button
- onClick={() => handleBookingEmail(artist.name)}
+ onClick={() => handleBooking(artist.name)}
 
   className="mt-2 px-4 py-2 bg-blue-600 text-white rounded justify-center hover:bg-blue-700"
 >
